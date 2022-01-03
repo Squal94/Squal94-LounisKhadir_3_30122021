@@ -15,6 +15,7 @@
 $color-primary : #9356DC ;
 $color-secondary :#FF79DA ;
 $color-tertiary :#99E2D0 ;
+$background-color-lightgrey:#e9e7e7;
 
 *{
     box-sizing: border-box;
@@ -33,6 +34,32 @@ body{
         width: 100%;
     }
 }
+
+.localisation{
+    width: 100%;
+    background-color: $background-color-lightgrey;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 5px;
+    div{
+        padding-bottom: 5px;
+    }
+    form{
+        padding-bottom: 5px;
+        width: 40%;
+        input{
+            border: none;
+            background-color: $background-color-lightgrey;
+            font-weight: bold;
+            text-align: center;  
+            width: 100%;
+        }
+    }
+}
+
+
 
 
 

@@ -28,4 +28,28 @@ body {
   width: 100%;
 }
 
+.localisation {
+  width: 100%;
+  background-color: #e9e7e7;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+}
+.localisation div {
+  padding-bottom: 5px;
+}
+.localisation form {
+  padding-bottom: 5px;
+  width: 40%;
+}
+.localisation form input {
+  border: none;
+  background-color: #e9e7e7;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
