@@ -2,14 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    height: 50px;
-    width: 220px;
-    padding: 10px;  
+    margin: auto; 
     &--violet{
         background: linear-gradient($color-secondary,$color-primary);
         border:none;
         border-radius: 75px;
         color: $color-btn-violet;   
+        height: 50px;
+        width: 220px;
+        padding: 10px; 
     }
 }

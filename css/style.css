@@ -34,7 +34,7 @@ main {
 }
 
 .localisation {
-  background-color: #E9E7E7;
+  background-color: #e4e4e4;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -51,20 +51,29 @@ main {
 }
 .localisation form input {
   border: none;
-  background-color: #E9E7E7;
+  background-color: #e4e4e4;
   font-weight: bold;
   text-align: center;
   width: 100%;
 }
 
 .annuaire {
+  background-color: #f1f1f1;
   text-align: center;
   margin: auto;
-  width: 90%;
+  padding: 30px;
+  width: 100%;
 }
 .annuaire__title {
   width: 80%;
-  margin: 20px auto;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+}
+.nav__title {
+  margin-left: 10px;
 }
 
 .btn {
@@ -72,15 +81,15 @@ main {
   justify-content: center;
   align-items: center;
   margin: auto;
-  height: 50px;
-  width: 220px;
-  padding: 10px;
 }
 .btn--violet {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 75px;
   color: #FFFFFF;
+  height: 50px;
+  width: 220px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

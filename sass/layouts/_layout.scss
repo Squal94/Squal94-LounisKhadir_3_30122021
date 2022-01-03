@@ -33,11 +33,21 @@
 }
 
 .annuaire{
+    background-color: bg-light($background-color-lightgrey) ;
     text-align: center;
     margin: auto;
-    width: 90%;
+    padding: 30px;
+    width: 100%;
+
     &__title{
         width: 80%;
-        margin: 20px auto;
+        margin: 0 auto ;
+    }
+}
+
+.nav{
+    width: 100%;
+    &__title{
+        margin-left: 10px;
     }
 }
