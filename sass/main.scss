@@ -1,3 +1,21 @@
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../fonts/Shrikhand-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "robotoregular";
+    src:  url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$color-primary : #9356DC ;
+$color-secondary :#FF79DA ;
+$color-tertiary :#99E2D0 ;
+
 *{
     box-sizing: border-box;
 }
@@ -5,4 +23,16 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
+
+.logo{
+    width: 40%;
+    margin: 20px auto;
+    img{
+        width: 100%;
+    }
+}
+
+
+
