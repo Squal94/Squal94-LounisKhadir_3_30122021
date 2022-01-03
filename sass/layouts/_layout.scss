@@ -1,0 +1,43 @@
+.logo{
+    width: 50%;
+    margin: 20px auto;
+    &--center{
+        width: 100%;
+    }
+}
+
+
+
+.localisation{
+    background-color: $background-color-lightgrey;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 10px;
+    width: 100%;
+    div{
+        padding-bottom: 5px;
+    }
+    form{
+        padding-bottom: 5px;
+        width: 40%;
+        input{
+            border: none;
+            background-color: $background-color-lightgrey;
+            font-weight: bold;
+            text-align: center;  
+            width: 100%;
+        }
+    }
+}
+
+.annuaire{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    &__title{
+        width: 80%;
+        margin: 20px auto;
+    }
+}

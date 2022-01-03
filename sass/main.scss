@@ -1,63 +1,18 @@
-@font-face {
-    font-family: "Shrikhand";
-    src: url("../fonts/Shrikhand-Regular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
+@import "./utils/variables" ;
+@import "./utils/function" ;
+@import "./utils/mixin" ;
 
-@font-face {
-    font-family: "robotoregular";
-    src:  url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
+@import "./base/fonts" ;
+@import "./base/base" ;
 
-$color-primary : #9356DC ;
-$color-secondary :#FF79DA ;
-$color-tertiary :#99E2D0 ;
-$background-color-lightgrey:#e9e7e7;
+@import "./layouts/layout" ;
 
-*{
-    box-sizing: border-box;
-}
+@import "./componants/btn" ;
 
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
 
-.logo{
-    width: 40%;
-    margin: 20px auto;
-    img{
-        width: 100%;
-    }
-}
 
-.localisation{
-    width: 100%;
-    background-color: $background-color-lightgrey;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items:flex-start;
-    padding: 5px;
-    div{
-        padding-bottom: 5px;
-    }
-    form{
-        padding-bottom: 5px;
-        width: 40%;
-        input{
-            border: none;
-            background-color: $background-color-lightgrey;
-            font-weight: bold;
-            text-align: center;  
-            width: 100%;
-        }
-    }
-}
+
+
 
 
 

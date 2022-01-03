@@ -18,24 +18,29 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: 0 8px;
 }
 
 .logo {
-  width: 40%;
+  width: 50%;
   margin: 20px auto;
 }
-.logo img {
+.logo--center {
   width: 100%;
 }
 
 .localisation {
-  width: 100%;
-  background-color: #e9e7e7;
+  background-color: #E9E7E7;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 5px;
+  padding: 10px;
+  width: 100%;
 }
 .localisation div {
   padding-bottom: 5px;
@@ -46,10 +51,36 @@ body {
 }
 .localisation form input {
   border: none;
-  background-color: #e9e7e7;
+  background-color: #E9E7E7;
   font-weight: bold;
   text-align: center;
   width: 100%;
+}
+
+.annuaire {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+.annuaire__title {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50px;
+  width: 220px;
+  padding: 10px;
+}
+.btn--violet {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 75px;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
