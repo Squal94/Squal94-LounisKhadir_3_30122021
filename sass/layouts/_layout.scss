@@ -10,6 +10,7 @@
 
 .localisation{
     background-color: $background-color-lightgrey;
+    @include shadow-inset (shadow($background-color-lightgrey));
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -49,5 +50,25 @@
     width: 100%;
     &__title{
         margin-left: 10px;
+    }
+    &__flex{
+        @include flexMidCol ;
+        margin: auto;
+       
+    }
+    &__btn{
+        @include flexMidRow ;
+        @include shadow (shadow($background-color-lightgrey));
+        padding: 20px ;
+        margin: 10px;
+        &--forme{
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bolder;
+            &--i {
+                padding-right: 30px;
+            }
+        }
     }
 }

@@ -1,4 +1,9 @@
 @function bg-light($color){
     $bg-light : lighten($color, 5%);
     @return $bg-light ;
-    }
+}
+
+@function shadow($color){
+    $shadow : darken($color, 10%);
+    @return $shadow ;
+}
