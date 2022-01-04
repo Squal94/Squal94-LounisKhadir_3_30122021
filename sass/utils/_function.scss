@@ -3,9 +3,14 @@
     @return $bg-light ;
 }
 
-@function shadow($color){
-    $shadow : darken($color, 10%);
-    @return $shadow ;
+@function dark-color-light($color){
+    $dark-color-light : darken($color, 10%);
+    @return $dark-color-light ;
+}
+
+@function dark-color($color){
+    $dark-color : darken($color, 40%);
+    @return $dark-color ;
 }
 
 @function hover($color){

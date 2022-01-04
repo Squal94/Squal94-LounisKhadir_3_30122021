@@ -10,7 +10,7 @@
 
 .localisation{
     background-color: $background-color-lightgrey;
-    @include shadow-inset (shadow($background-color-lightgrey));
+    @include shadow-inset (dark-color-light($background-color-lightgrey));
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -47,7 +47,8 @@
 }
 
 .nav{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     &__title{
         margin-left: 10px;
     }
@@ -58,9 +59,9 @@
     }
     &__btn{
         @include flexstartRow ;
-        @include shadow (shadow($background-color-lightgrey));
+        @include shadow ;/*(dark-color-light($background-color-lightgrey))*/
         position: relative;
-        padding: 30px 20px ;
+        padding: 25px 20px ;
         margin: 10px;
         span{
             position: absolute;
@@ -71,15 +72,16 @@
             border-radius: 50%;
             color: $lightcolor-item-fonts ;
             font-size: 0.7em;
-            transform: translate(-50%, 125%);
+            transform: translate(-50%, 100%);
         }
         &--forme{
             border: none;
             border-radius: 25px;
-            font-size: 1.1em;
+            font-size: 1em;
             font-weight: bolder;
             &--i {
-                padding-right: 30px;
+                padding: 0 15px 0 15px;
+                color: grey;
             }
         &:hover{
             background-color: hover($color-primary);
@@ -100,7 +102,7 @@
     margin: 50px 0 0 0;
 
     &__title{
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     &__flex{
@@ -115,25 +117,28 @@
     height: 250px;
     margin: 10px auto;
     border-radius: 20px;
+    position: relative;
     background-color: $lightcolor-item-fonts;
+    @include shadow ;
     &__img{
         width: 100%;
         height: 175px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
-        position: relative;
-        &--annotation{
-            width: 100px;
-            height: 30px;
-            border-radius: 2px;
-            background-color: $color-tertiary;
-            color: shadow($color-tertiary);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            transform: translate(200%, -500%);
-        }
+    }
+    &--annotation{
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        background-color: $color-tertiary;
+        color: dark-color($color-tertiary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        /*transform: translate(200%, -500%);*/
     }
     &__txt{
         width: 100%;
@@ -145,6 +150,23 @@
             right: 10px;
             top:12.5px;
            /* transform: translate(1100%, 25%);*/
+        }
+
+        &--hidden{
+            position: absolute;
+            font-size: 1.5em;
+            right: 10px;
+            top: 12.5px;
+            background: linear-gradient($color-secondary,$color-primary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            opacity: 0;
+            transition: all 0.1s ease-in-out;
+            &:hover{
+                opacity: 1;
+                transform: scale(1.1);
+            }
         }
         &--title{
             margin: 5px 10px;

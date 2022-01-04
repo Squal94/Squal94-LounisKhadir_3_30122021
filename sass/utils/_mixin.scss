@@ -1,5 +1,6 @@
-@mixin shadow($color) {
-    box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;
+@mixin shadow{
+    /*box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;*/
+    box-shadow: rgba(129, 129, 136, 0.2) 0px 7px 7px 0px ;
 }
 
 @mixin shadow-inset($color) {

@@ -4,11 +4,13 @@
     align-items: center;
     margin: auto; 
     font-size: 1em;
+    @include shadow ;
     &--violet{
         background: linear-gradient($color-secondary,$color-primary);
         border:none;
         border-radius: 75px;
         color: $color-btn-violet;   
+        font-weight: 600;
         height: 50px;
         width: 220px;
         padding: 10px; 
