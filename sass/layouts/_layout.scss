@@ -57,7 +57,7 @@
        
     }
     &__btn{
-        @include flexMidRow ;
+        @include flexstartRow ;
         @include shadow (shadow($background-color-lightgrey));
         position: relative;
         padding: 30px 20px ;
@@ -90,4 +90,68 @@
        
         }
     }
+}
+
+
+.restau{
+    background-color: bg-light($background-color-lightgrey);
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 30px;
+
+    &__title{
+        margin-left: 10px;
+    }
+
+    &__flex{
+        width: 100%;
+        margin: auto;
+        @include flexMidCol ;
+    }
+}
+
+.carte{
+    width: 90%;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: $white;
+    &__img{
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        position: relative;
+        &--annotation{
+            width: 100px;
+            height: 30px;
+            border-radius: 2px;
+            background-color: $color-tertiary;
+            color: shadow($color-tertiary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            transform: translate(200%, -500%);
+        }
+    }
+    &__txt{
+        width: 100%;
+        height: 75px;
+        position: relative;
+        &--coeur{
+            position: absolute;
+            font-size: $size-coeur;
+            right: 10px;
+            top:12.5px;
+           /* transform: translate(1100%, 25%);*/
+        }
+        &--title{
+            margin: 5px 10px;
+        }
+        &--localisation{
+            margin: 5px 10px;
+        }
+    }
+
 }
