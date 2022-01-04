@@ -7,3 +7,14 @@
     $shadow : darken($color, 10%);
     @return $shadow ;
 }
+
+@function hover($color){
+    $hover : lighten($color, 35%);
+    @return $hover ;
+}
+
+@function opa($color){
+    $opa : opacity($color,0.5);
+    @return $opa ;
+}
+

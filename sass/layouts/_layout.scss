@@ -60,7 +60,7 @@
         @include flexMidRow ;
         @include shadow (shadow($background-color-lightgrey));
         position: relative;
-        padding: 20px ;
+        padding: 30px 20px ;
         margin: 10px;
         span{
             position: absolute;
@@ -71,7 +71,7 @@
             border-radius: 50%;
             color: $white;
             font-size: 0.7em;
-            transform: translate(-50%, 75%);
+            transform: translate(-50%, 125%);
         }
         &--forme{
             border: none;
@@ -81,6 +81,13 @@
             &--i {
                 padding-right: 30px;
             }
+        &:hover{
+            background-color: hover($color-primary);
+            & i{
+                color: $color-primary;
+            }
+        }
+       
         }
     }
 }
