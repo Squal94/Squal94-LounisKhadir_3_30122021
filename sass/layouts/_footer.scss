@@ -1,0 +1,32 @@
+.footer{
+    width: 100%;
+    background-color: $background-color-footer;
+    color: $lightcolor-item-fonts;
+    padding: 20px;
+    &__title {
+        padding:10px 10px 10px 20px;
+        margin: 0;
+        font-weight: 100;
+        font-family:"Shrikhand", Arial, Helvetica, sans-serif;
+    }
+    &__with-i{
+        @include flexstartRow;
+        margin: 0px 0px 0px 20px;
+        padding: 0;
+        font-size: 0.9em;
+        & i{
+            height: 15px;
+            width: 25px;
+        }
+        &--txt{
+            margin: 5px;
+        }
+    }
+    &__with-i:hover{
+        color: $color-primary;
+    }
+    &__txt{
+        margin: 5px 5px 5px 20px;
+        font-size: 0.9em;
+    }
+}

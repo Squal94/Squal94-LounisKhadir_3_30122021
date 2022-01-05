@@ -1,0 +1,87 @@
+.restau{
+    background-color: bg-light($background-color-lightgrey);
+    width: 100%;
+    padding: 30px 0 50px 0;
+    margin: 50px 0 0 0;
+
+    &__title{
+        margin-left: 20px;
+    }
+
+    &__flex{
+        width: 100%;
+        margin: auto;
+        @include flexMidCol ;
+    }
+}
+
+
+.carte{
+    width: 95%;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 20px;
+    position: relative;
+    background-color: $lightcolor-item-fonts;
+    @include shadow ;
+    &__img{
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    &--annotation{
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        background-color: $color-tertiary;
+        color: dark-color($color-tertiary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        /*transform: translate(200%, -500%);*/
+    }
+    &__txt{
+        width: 100%;
+        height: 75px;
+        position: relative;
+        &--coeur{
+            position: absolute;
+            font-size: $size-coeur;
+            right: 10px;
+            top:12.5px;
+            text-shadow: 0 0 0 rgba(147, 86, 220, .9),;
+            animation: battement 2s infinite cubic-bezier(.68, 0, 0, 1);
+        }
+        &--hidden{
+            position: absolute;
+            font-size: 1.5em;
+            right: 10px;
+            top: 12.5px;
+            background: linear-gradient($color-secondary,$color-primary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+            transform-origin: center;
+            &:hover{
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+        &--title{
+            margin: 0 10px;
+        }
+        &--localisation{
+            margin: 5px 10px;
+        }
+    }
+    &__cliquable:hover .carte__img{
+        opacity: 0.5;
+    }
+}
