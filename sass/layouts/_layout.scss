@@ -119,6 +119,7 @@
     }
 }
 
+
 .carte{
     width: 95%;
     height: 250px;
@@ -132,6 +133,7 @@
         height: 175px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
+        transition: opacity 0.3s ease-in-out;
     }
     &--annotation{
         width: 80px;
@@ -177,11 +179,14 @@
             }
         }
         &--title{
-            margin: 5px 10px;
+            margin: 0 10px;
         }
         &--localisation{
             margin: 5px 10px;
         }
+    }
+    &__cliquable:hover .carte__img{
+        opacity: 0.5;
     }
 }
 
@@ -209,6 +214,9 @@
         &--txt{
             margin: 5px;
         }
+    }
+    &__with-i:hover{
+        color: $color-primary;
     }
     &__txt{
         margin: 5px 5px 5px 20px;
