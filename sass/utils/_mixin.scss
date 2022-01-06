@@ -1,3 +1,27 @@
+/*mixin Breakpoint*/
+@mixin tablette {
+    @media screen and (min-width : $min-tab) and (max-width : $max-tab) {
+        @content ;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width : $min-desk) and (max-width : $max-desk) {
+        @content ;
+    }
+}
+
+@mixin tv {
+    @media screen and (min-width : $min-tv) and (max-width : $max-tv) {
+        @content ;
+    }
+}
+
+
+
+
+/* Shadow */
+
 @mixin shadow{
     /*box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;*/
     box-shadow: rgba(129, 129, 136, 0.2) 0px 7px 7px 0px ;
@@ -6,6 +30,8 @@
 @mixin shadow-inset($color) {
     box-shadow: inset 0 $size-shadow $shadow-flou $shadow-flou $color;
 }
+
+/* Mixin flex*/
 
 @mixin flexstartRow {
     display: flex;

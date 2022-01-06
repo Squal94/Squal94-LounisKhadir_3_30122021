@@ -1,10 +1,25 @@
+/* color */
 $color-primary : #9356DC ;
 $color-secondary :#FF79DA ;
 $color-tertiary :#99E2D0 ;
+$lightcolor-item-fonts : white ;
+$color-btn-violet:#FFFFFF;
+
+/* background color */
 $background-color-lightgrey:#e4e4e4;
 $background-color-footer:rgb(37, 37, 37);
-$color-btn-violet:#FFFFFF;
-$lightcolor-item-fonts : white ;
+
+/* size */
 $size-shadow: 1px ;
-$size-coeur:1.5em;
 $shadow-flou: 1px;
+$size-coeur:1.5em;
+
+/* breakpoint */
+$min-tab: 768px;
+$max-tab: 992px;
+$min-desk: 993px;
+$max-desk:1440px;
+$min-tv:1441px;
+$max-tv:2500px;
+
+
