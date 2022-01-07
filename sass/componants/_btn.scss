@@ -21,3 +21,16 @@
         @include block-opacity;
     }
 }
+
+.fleche{
+    font-size: 1.2em;
+    left: 20px;
+    top: 10px;
+    padding: 20px;
+    position: absolute;
+    z-index: 2;
+    @include transition-transform;
+    &:hover{
+        @include x-10;
+    }
+}
