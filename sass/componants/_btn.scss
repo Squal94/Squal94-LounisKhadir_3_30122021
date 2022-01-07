@@ -5,6 +5,7 @@
     margin: auto; 
     font-size: 1em;
     @include shadow ;
+    @include transition-transform ;
     &--violet{
         background: linear-gradient($color-secondary,$color-primary);
         border:none;
@@ -16,6 +17,7 @@
         padding: 10px; 
     }
     &:hover{
-        opacity: 0.7;
+        @include block-scale ;
+        @include block-opacity;
     }
 }

@@ -23,3 +23,40 @@ $min-tv:1441px;
 $max-tv:2500px;
 
 
+/* image size load */
+
+/* 
+    1: la note enchantée
+    2: la palette du goût
+    3: le delice du sens
+    4: a la francaise
+*/
+
+$img-rest: (
+    1: url(../image/restaurants/small/restau-1_w640.jpg),
+    2: url(../image/restaurants/small/restau-2_w640.jpg),
+    3: url(../image/restaurants/small/restau-3_w640.jpg),
+    4: url(../image/restaurants/small/restau-4_w640.jpg),
+);
+
+$img-rest-tab: (
+    1: url(../image/restaurants/medium/restau-1_w1024.jpg),
+    2: url(../image/restaurants/medium/restau-2_w1024.jpg),
+    3: url(../image/restaurants/medium/restau-3_w1024.jpg),
+    4: url(../image/restaurants/medium/restau-4_w1024.jpg),
+);
+
+$img-rest-desk: (
+    1: url(../image/restaurants/large/restau-1_w1920.jpg),
+    2: url(../image/restaurants/large/restau-2_w1920.jpg),
+    3: url(../image/restaurants/large/restau-3_w1920.jpg),
+    4: url(../image/restaurants/large/restau-4_w1920.jpg),
+);
+
+$img-rest-tv: (
+    1: url(../image/restaurants/large/restau-1_w1920.jpg),
+    2: url(../image/restaurants/large/restau-2_w1920.jpg),
+    3: url(../image/restaurants/large/restau-3_w1920.jpg),
+    4: url(../image/restaurants/large/restau-4_w1920.jpg),
+);
+

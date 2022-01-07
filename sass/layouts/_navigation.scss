@@ -12,6 +12,7 @@
     &__btn{
         @include flexstartRow ;
         @include shadow ;/*(dark-color-light($background-color-lightgrey))*/
+        @include transition-transform ;
         position: relative;
         padding: 25px 20px ;
         margin: 10px;
@@ -36,6 +37,7 @@
                 color: grey;
             }
         &:hover{
+            @include block-scale ;
             background-color: hover($color-primary);
             & i{
                 color: $color-primary;
