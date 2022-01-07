@@ -3,12 +3,13 @@
 /* background color */
 /* size */
 /* breakpoint */
+/* codage auto */
 /* image size load */
 /* 
-    1: la note enchantée
-    2: la palette du goût
-    3: le delice du sens
-    4: a la francaise
+    1: la palette du goût
+    2: la note enchantée 
+    3: a la francaise
+    4: le delice du sens 
 */
 /*mixin Breakpoint*/
 /* Shadow */
@@ -193,25 +194,25 @@ a {
   transition: opacity 0.3s ease-in-out;
 }
 .carte__img--1 {
-  background-image: url(../image/restaurants/small/restau-2_w640.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.carte__img--2 {
   background-image: url(../image/restaurants/small/restau-1_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.carte__img--2 {
+  background-image: url(../image/restaurants/small/restau-2_w640.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .carte__img--3 {
-  background-image: url(../image/restaurants/small/restau-4_w640.jpg);
+  background-image: url(../image/restaurants/small/restau-3_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .carte__img--4 {
-  background-image: url(../image/restaurants/small/restau-3_w640.jpg);
+  background-image: url(../image/restaurants/small/restau-4_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

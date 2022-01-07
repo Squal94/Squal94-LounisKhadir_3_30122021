@@ -22,14 +22,21 @@ $max-desk:1440px;
 $min-tv:1441px;
 $max-tv:2500px;
 
+/* codage auto */
+$num:(
+    num1: 1,
+    num2: 2,
+    num3: 3,
+    num4: 4,
+);
 
 /* image size load */
 
 /* 
-    1: la note enchantée
-    2: la palette du goût
-    3: le delice du sens
-    4: a la francaise
+    1: la palette du goût
+    2: la note enchantée 
+    3: a la francaise
+    4: le delice du sens 
 */
 
 $img-rest: (
