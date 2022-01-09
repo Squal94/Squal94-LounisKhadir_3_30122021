@@ -123,7 +123,7 @@ h1 {
   /*box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;*/
   box-shadow: rgba(129, 129, 136, 0.2) 0px 7px 7px 0px;
   /*(dark-color-light($background-color-lightgrey))*/
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   position: relative;
   padding: 25px 20px;
   margin: 10px;
@@ -184,7 +184,7 @@ h1 {
   border-radius: 20px;
   position: relative;
   background-color: white;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   /*box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;*/
   box-shadow: rgba(129, 129, 136, 0.2) 0px 7px 7px 0px;
 }
@@ -242,7 +242,13 @@ h1 {
   padding-top: 10px;
   position: relative;
 }
-.carte__txt--coeur {
+.carte__txt__conteneur {
+  cursor: pointer;
+}
+.carte__txt__conteneur:hover .carte__txt__conteneur--coeur {
+  opacity: 0;
+}
+.carte__txt__conteneur--coeur {
   position: absolute;
   font-size: 1.5em;
   right: 20px;
@@ -250,8 +256,9 @@ h1 {
   text-shadow: 0 0 0 rgba(147, 86, 220, 0.9);
   animation: battement 2s infinite cubic-bezier(0.68, 0, 0, 1);
   z-index: 2;
+  transition: all 0.2s ease-in-out;
 }
-.carte__txt--hidden {
+.carte__txt__conteneur--hidden {
   position: absolute;
   font-size: 1.5em;
   right: 20px;
@@ -264,8 +271,9 @@ h1 {
   transition: all 0.2s ease-in-out;
   transform-origin: center;
   z-index: 2;
+  transition: all 0.4s ease-in-out;
 }
-.carte__txt--hidden:hover {
+.carte__txt__conteneur--hidden:hover {
   opacity: 1;
 }
 .carte__txt--title {
@@ -323,7 +331,7 @@ h1 {
   font-size: 1em;
   /*box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;*/
   box-shadow: rgba(129, 129, 136, 0.2) 0px 7px 7px 0px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .btn--violet {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -348,7 +356,7 @@ h1 {
   padding: 20px;
   position: absolute;
   z-index: 2;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .fleche:hover {
   transform: translateX(-10px);
@@ -363,7 +371,13 @@ h1 {
   height: 400px;
   position: relative;
 }
-.head-menu__img--coeur {
+.head-menu__img__conteneur {
+  cursor: pointer;
+}
+.head-menu__img__conteneur:hover .carte__txt__conteneur--coeur {
+  opacity: 0;
+}
+.head-menu__img__conteneur--coeur {
   position: absolute;
   font-size: 1.5em;
   right: 20px;
@@ -371,8 +385,9 @@ h1 {
   text-shadow: 0 0 0 rgba(147, 86, 220, 0.9);
   animation: battement 2s infinite cubic-bezier(0.68, 0, 0, 1);
   z-index: 2;
+  transition: all 0.2s ease-in-out;
 }
-.head-menu__img--hidden {
+.head-menu__img__conteneur--hidden {
   position: absolute;
   font-size: 1.5em;
   right: 20px;
@@ -385,8 +400,9 @@ h1 {
   transition: all 0.2s ease-in-out;
   transform-origin: center;
   z-index: 2;
+  transition: all 0.4s ease-in-out;
 }
-.head-menu__img--hidden:hover {
+.head-menu__img__conteneur--hidden:hover {
   opacity: 1;
 }
 .head-menu--img1 {
