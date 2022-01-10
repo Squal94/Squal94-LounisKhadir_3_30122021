@@ -93,6 +93,14 @@
                 }
             }
         }
+    }   
+}
+
+.conteneur-btn{
+    @include flexcenterRow ;
+    width: 100%;
+    .btn--violet{
+        width: 40%;
+        margin: 50px 50px 70px 50px;
     }
-    
 }
