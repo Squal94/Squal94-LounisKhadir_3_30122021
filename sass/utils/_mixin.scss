@@ -38,6 +38,13 @@
     width: 95%;
 }
 
+@mixin flexcenterRow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin flexMidCol {
     display: flex;
     flex-flow: column nowrap;
