@@ -708,11 +708,22 @@ h1 {
 .menu__btn:hover .menu__btn__prix__check {
   margin-right: 0;
 }
+.menu__btn:hover .menu__btn__prix__check--rotation {
+  transform: rotate(360deg);
+}
+.menu__btn__content {
+  overflow: hidden;
+}
 .menu__btn__content--h3 {
   margin: 20px 0 5px 10px;
 }
 .menu__btn__content--txt {
+  width: 100%;
+  padding-right: 10px;
   margin: 0 0 15px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__btn__prix {
   height: 100%;
@@ -722,7 +733,7 @@ h1 {
   align-items: center;
 }
 .menu__btn__prix__euro {
-  margin: 35px 20px 5px 20px;
+  margin: 35px 20px 5px 10px;
   font-weight: bold;
 }
 .menu__btn__prix__check {
@@ -731,6 +742,15 @@ h1 {
   width: 70px;
   border-radius: 0 20px 20px 0;
   background: #99E2D0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+.menu__btn__prix__check--rotation {
+  font-size: 1.5em;
+  color: white;
   transition: all 0.4s ease-in-out;
 }
 

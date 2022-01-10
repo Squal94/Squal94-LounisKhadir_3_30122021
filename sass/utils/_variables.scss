@@ -5,12 +5,14 @@ $color-secondary :#FF79DA ;
 $color-tertiary :#99E2D0 ;
 $lightcolor-item-fonts : white ;
 $color-btn-violet:#FFFFFF;
+$color-check:white;
 
 /* background color */
 $background-color-lightgrey:#e4e4e4;
 $background-color-footer:rgb(37, 37, 37);
 $background-loader: rgb(224, 224, 224);
 $background-menu-btn:white;
+
 
 /* size */
 $font-size-loader:100px;
@@ -22,6 +24,7 @@ $margin-menu-h2:0 0 0 15px;
 $margin-menu-txt: 0 0 15px 10px ;
 $margin-menu-prix: 0 30px 15px 0;
 $margin-menu-h3:20px 0 5px 10px;
+$fontsize-check: 1.5em;
 
 /* breakpoint */
 $min-tab: 768px;
