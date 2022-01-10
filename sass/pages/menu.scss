@@ -59,6 +59,9 @@
                 overflow: hidden;
             &--h3{
                 margin: $margin-menu-h3;
+                white-space:nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 
             }
             &--txt{

@@ -285,7 +285,7 @@ h1 {
 .loading .loader .conteneur-coeur__3 {
   animation: fourchette 1s 0.3s both;
   color: #9356DC;
-  font-size: clamp(50px, 7.5vw, 85px);
+  font-size: clamp(70px, 7.5vw, 85px);
   margin-left: 15px;
   margin-bottom: 25px;
 }
@@ -716,6 +716,9 @@ h1 {
 }
 .menu__btn__content--h3 {
   margin: 20px 0 5px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__btn__content--txt {
   width: 100%;
