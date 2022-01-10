@@ -53,6 +53,21 @@
     width: 95%;
 }
 
+@mixin flextartCol {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+@mixin flexCenterBetween{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* image-select */
 
 @mixin select-img ($num-img){
@@ -85,6 +100,7 @@
 @mixin transition-transform2 {
     transition: all 0.2s ease-in-out;
 }
+
 
 /* bouton anime*/
 

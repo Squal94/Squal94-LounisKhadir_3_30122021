@@ -677,4 +677,61 @@ h1 {
   width: 100%;
 }
 
+.conteneur-menu {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.menu {
+  width: 100%;
+}
+.menu__title h2 {
+  font-size: 1.1em;
+  margin: 0 0 0 15px;
+}
+.menu__btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 80px;
+  margin: 15px auto;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.menu__btn:hover .menu__btn__prix__check {
+  margin-right: 0;
+}
+.menu__btn__content--h3 {
+  margin: 20px 0 5px 10px;
+}
+.menu__btn__content--txt {
+  margin: 0 0 15px 10px;
+}
+.menu__btn__prix {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.menu__btn__prix__euro {
+  margin: 35px 20px 5px 20px;
+  font-weight: bold;
+}
+.menu__btn__prix__check {
+  margin-right: -70px;
+  height: 80px;
+  width: 70px;
+  border-radius: 0 20px 20px 0;
+  background: #99E2D0;
+  transition: all 0.4s ease-in-out;
+}
+
 /*# sourceMappingURL=style.css.map */

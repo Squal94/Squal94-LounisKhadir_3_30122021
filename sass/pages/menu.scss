@@ -26,3 +26,55 @@
         width: 100%;
     }
 }
+
+.conteneur-menu{
+   @include flextartCol ;
+   background-color: bg-light($background-color-lightgrey)  ;
+}
+
+.menu{
+    width: 100%;
+    &__title{
+        & h2{
+            font-size: $fontsize-menu-h2;
+            margin: $margin-menu-h2;
+        }
+    }
+    &__btn{
+        @include flexCenterBetween;
+        width: 95%;
+        height: 80px;
+        margin: 15px auto;
+        background-color: $background-menu-btn;
+        border-radius: 20px;
+        overflow: hidden;
+        &:hover .menu__btn__prix__check{
+            margin-right: 0;
+        }
+        &__content{
+            &--h3{
+                margin: $margin-menu-h3;
+            }
+            &--txt{
+                margin: $margin-menu-txt;
+            }
+        }
+        &__prix{
+            height: 100%;
+            @include flexcenterRow;
+            &__euro{
+                margin: 35px 20px 5px 20px;
+                font-weight: bold;
+            }
+            &__check{
+                margin-right:-70px;
+                height: 80px;
+                width: 70px;
+                border-radius: 0 20px 20px 0;
+                background: $color-tertiary; 
+                @include transition-transform;
+            }
+        }
+    }
+    
+}
