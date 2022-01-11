@@ -24,8 +24,15 @@
     @return $opa ;
 }
 
-
-
+/*
+@function time-animation($t-boucle){
+    @for $t from 1 through 9 {
+        $t-boucle : ($t + 0.2s)
+    }
+    @return $t-boucle ;
+}
+*/
+    
 
 
 

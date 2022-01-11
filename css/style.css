@@ -11,6 +11,14 @@
     3: a la francaise
     4: le delice du sens 
 */
+/*
+@function time-animation($t-boucle){
+    @for $t from 1 through 9 {
+        $t-boucle : ($t + 0.2s)
+    }
+    @return $t-boucle ;
+}
+*/
 /*mixin Breakpoint*/
 /* Shadow */
 /* Mixin flex*/
@@ -186,6 +194,27 @@
   }
   100% {
     transform: translateX(-10000px);
+  }
+}
+/* aniamtion menu*/
+@keyframes animation2 {
+  0% {
+    transform: translateY(20px);
+  }
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 @font-face {
@@ -698,12 +727,15 @@ h1 {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 6px 21px 1px rgba(165, 165, 165, 0.75);
   width: 95%;
   height: 80px;
   margin: 15px auto;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
+  animation: animation2 0.2s ease-in backwards;
+  animation-delay: 0.1s;
 }
 .menu__btn:hover .menu__btn__prix__check {
   margin-right: 0;
