@@ -49,11 +49,12 @@
         background-color: $background-menu-btn;
         border-radius: 20px;
         overflow: hidden;
-        animation: animation2 0.2s  ease-in backwards;
-        @for $t-boucle from 1 to 10 {
-            $t-boucle : $t-boucle + 0.1s ;
+        animation: animation2 0.4s ease-in-out backwards;
+        @for $t-boucle from 1 through 10 {
+            &:nth-child(#{$t-boucle}) {
+            animation-delay : $t-boucle * 0.1s ;
+            }
         }
-        animation-delay: $t-boucle ;
         &:hover .menu__btn__prix__check{
             margin-right: 0;
             

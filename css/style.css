@@ -199,18 +199,12 @@
 /* aniamtion menu*/
 @keyframes animation2 {
   0% {
-    transform: translateY(20px);
-  }
-  0% {
     opacity: 0;
   }
-  30% {
-    opacity: 0.3;
+  0% {
+    transform: translateY(40px);
   }
-  50% {
-    opacity: 0.5;
-  }
-  70% {
+  100% {
     opacity: 1;
   }
   100% {
@@ -734,8 +728,37 @@ h1 {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
-  animation: animation2 0.2s ease-in backwards;
+  animation: animation2 0.4s ease-in-out backwards;
+}
+.menu__btn:nth-child(1) {
   animation-delay: 0.1s;
+}
+.menu__btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.menu__btn:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.menu__btn:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.menu__btn:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.menu__btn:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.menu__btn:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.menu__btn:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.menu__btn:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.menu__btn:nth-child(10) {
+  animation-delay: 1s;
 }
 .menu__btn:hover .menu__btn__prix__check {
   margin-right: 0;
