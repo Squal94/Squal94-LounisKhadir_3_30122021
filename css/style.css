@@ -247,6 +247,21 @@
     transform: translateX(0px);
   }
 }
+/* animation under-line */
+@keyframes under {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 80px;
+  }
+  70% {
+    width: 15px;
+  }
+  100% {
+    width: 40px;
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   src: url("../fonts/Shrikhand-Regular.otf") format("opentype");
@@ -352,7 +367,7 @@ h1 {
 .logo {
   width: 50%;
   margin: 20px auto;
-  animation: logo 1s ease-in-out 5s 1 backwards;
+  animation: logo 1s ease-in-out 1 backwards;
 }
 .logo--center {
   width: 100%;
@@ -547,7 +562,7 @@ h1 {
 .carte__txt__conteneur--coeur {
   position: absolute;
   font-size: 1.5em;
-  right: 40px;
+  right: 30px;
   bottom: 25px;
   text-shadow: 0 0 0 rgba(147, 86, 220, 0.9);
   animation: battement 2s infinite cubic-bezier(0.68, 0, 0, 1);
@@ -676,7 +691,7 @@ h1 {
 .head-menu__img__conteneur--coeur {
   position: absolute;
   font-size: 1.5em;
-  right: 40px;
+  right: 30px;
   bottom: 25px;
   text-shadow: 0 0 0 rgba(147, 86, 220, 0.9);
   animation: battement 2s infinite cubic-bezier(0.68, 0, 0, 1);
@@ -758,6 +773,7 @@ h1 {
   height: 4px;
   width: 40px;
   background-color: #99E2D0;
+  animation: under 1s ease-in-out 0.2s 1 backwards;
 }
 .menu__btn {
   display: flex;

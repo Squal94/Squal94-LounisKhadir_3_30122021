@@ -44,7 +44,8 @@
             height: 4px;
             width: 40px;
             background-color: $color-tertiary;
-    }
+            animation: under 1s ease-in-out 0.2s 1 backwards;
+        }
     }
     &__btn{
         @include flexCenterBetween;
