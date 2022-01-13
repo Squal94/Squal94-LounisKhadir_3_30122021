@@ -601,82 +601,6 @@ h1 {
   opacity: 0.7;
 }
 
-.footer {
-  width: 100%;
-  background-color: #252525;
-  color: white;
-  padding: 20px;
-}
-.footer__title {
-  padding: 10px 10px 10px 20px;
-  margin: 0;
-  font-weight: 100;
-  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-}
-.footer__with-i {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  width: 95%;
-  margin: 0px 0px 0px 20px;
-  padding: 0;
-  font-size: 0.9em;
-}
-.footer__with-i i {
-  height: 15px;
-  width: 25px;
-}
-.footer__with-i--txt {
-  margin: 5px;
-}
-.footer__with-i:hover {
-  color: #9356DC;
-}
-.footer__txt {
-  margin: 5px 5px 5px 20px;
-  font-size: 0.9em;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  font-size: 1em;
-  /*box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;*/
-  box-shadow: rgba(129, 129, 136, 0.2) 0px 7px 7px 0px;
-  transition: all 0.4s ease-in-out;
-}
-.btn--violet {
-  background: linear-gradient(#FF79DA, #9356DC);
-  border: none;
-  border-radius: 75px;
-  color: #FFFFFF;
-  font-weight: 600;
-  height: 50px;
-  width: 220px;
-  padding: 10px;
-}
-.btn:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 0px 15px 3px rgba(147, 86, 220, 0.3);
-  opacity: 0.7;
-}
-
-.fleche {
-  font-size: 1.2em;
-  left: 20px;
-  top: 10px;
-  padding: 20px;
-  position: absolute;
-  z-index: 2;
-  transition: all 0.4s ease-in-out;
-}
-.fleche:hover {
-  transform: translateX(-10px);
-}
-
 .head-menu {
   width: 100%;
   position: relative;
@@ -885,6 +809,157 @@ h1 {
 .conteneur-btn .btn--violet {
   width: 40%;
   margin: 50px 50px 70px 50px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #252525;
+  color: white;
+  padding: 20px;
+}
+.footer__title {
+  padding: 10px 10px 10px 20px;
+  margin: 0;
+  font-weight: 100;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+.footer__with-i {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+  margin: 0px 0px 0px 20px;
+  padding: 0;
+  font-size: 0.9em;
+}
+.footer__with-i i {
+  height: 15px;
+  width: 25px;
+}
+.footer__with-i--txt {
+  margin: 5px;
+}
+.footer__with-i:hover {
+  color: #9356DC;
+}
+.footer__txt {
+  margin: 5px 5px 5px 20px;
+  font-size: 0.9em;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 1em;
+  /*box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;*/
+  box-shadow: rgba(129, 129, 136, 0.2) 0px 7px 7px 0px;
+  transition: all 0.4s ease-in-out;
+}
+.btn--violet {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 75px;
+  color: #FFFFFF;
+  font-weight: 600;
+  height: 50px;
+  width: 220px;
+  padding: 10px;
+}
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 15px 3px rgba(147, 86, 220, 0.3);
+  opacity: 0.7;
+}
+
+.fleche {
+  font-size: 1.2em;
+  left: 20px;
+  top: 10px;
+  padding: 20px;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.4s ease-in-out;
+}
+.fleche:hover {
+  transform: translateX(-10px);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .localisation {
+    background-color: white;
+    box-shadow: none;
+    margin-left: -10px;
+  }
+  .localisation i {
+    margin: 7px 10px 0 0;
+    color: #9356DC;
+  }
+  .localisation form input {
+    background-color: #9356DC;
+    color: white;
+    border: 3px solid #bbbbbb;
+    border-radius: 25px;
+  }
+
+  .annuaire {
+    background-color: #e6d1e0;
+  }
+
+  .nav__title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__flex {
+    width: 95%;
+    background-color: white;
+    animation: animation2 0.3s ease-in-out 0.2s 1 backwards;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__btn--forme {
+    width: 33%;
+  }
+
+  .restau {
+    background-color: white;
+    width: 100%;
+  }
+  .restau__title {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .restau__flex {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carte {
+    width: 40%;
+    margin: 20px;
+  }
+
+  .footer {
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

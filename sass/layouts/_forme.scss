@@ -1,0 +1,67 @@
+@include tablette {
+
+    .localisation{
+        background-color: $lightcolor-item-fonts ;
+        box-shadow: none;
+        margin-left: -10px;
+        & i{
+            margin: 7px 10px 0 0;
+            color: $color-primary;
+        }
+        & form input{
+            background-color: $color-primary;
+            color: $lightcolor-item-fonts;
+            border: 3px solid rgb(187, 187, 187);
+            border-radius: 25px;
+        }
+    }
+
+    .annuaire{
+        background-color: #e6d1e0;
+    }
+
+    .nav{
+
+        &__title{
+            @include flexcenterRow ;
+        }
+
+        &__flex{
+            width: 95%;
+            background-color: $lightcolor-item-fonts;
+            animation: animation2 0.3s ease-in-out 0.2s 1 backwards;
+            @include flexcenterRow ;
+        }
+        &__btn--forme{
+            width: 33%;
+        }
+
+    }
+
+    .restau{
+        background-color: $lightcolor-item-fonts;
+        width: 100%;
+        &__title{
+           width: 100%;
+           margin: auto;
+           @include flexcenterRow ;
+        }
+    
+        &__flex{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-flow: row wrap ;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .carte{
+        width: 40%;
+        margin: 20px;
+    }     
+    .footer{
+        margin: auto;
+        @include flexcenterRow;
+    }
+}
