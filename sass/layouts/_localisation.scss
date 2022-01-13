@@ -1,24 +1,25 @@
 .localisation{
+    width: 100%;
     background-color: $background-color-lightgrey;
     @include shadow-inset (dark-color-light($background-color-lightgrey));
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items:flex-start;
-    padding: 10px;
-    width: 100%;
-    div{
-        padding-bottom: 5px;
-    }
     form{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items:flex-start;
+        padding: 10px;
+        width: 50%;
+        margin: auto;
+        div{
         padding-bottom: 5px;
-        width: 40%;
+        }
         input{
-            border: none;
-            background-color: $background-color-lightgrey;
-            font-weight: bold;
-            text-align: center;  
-            width: 100%;
+        margin-top: 5px;
+        border: none;
+        background-color: $background-color-lightgrey;
+        font-weight: bold;
+        text-align: center;  
+        width: 70%;
         }
     }
 }

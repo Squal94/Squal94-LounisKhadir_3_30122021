@@ -258,6 +258,9 @@
   70% {
     width: 15px;
   }
+  80% {
+    width: 55px;
+  }
   100% {
     width: 40px;
   }
@@ -302,7 +305,7 @@ h1 {
   align-items: center;
   animation: loading 4.5s ease-out;
   animation-fill-mode: forwards;
-  background-color: #e0e0e0;
+  background-color: #f1f1f1;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -374,28 +377,29 @@ h1 {
 }
 
 .localisation {
+  width: 100%;
   background-color: #e4e4e4;
   box-shadow: inset 0 1px 1px 1px #cbcbcb;
+}
+.localisation form {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: flex-start;
   padding: 10px;
-  width: 100%;
+  width: 50%;
+  margin: auto;
 }
-.localisation div {
+.localisation form div {
   padding-bottom: 5px;
-}
-.localisation form {
-  padding-bottom: 5px;
-  width: 40%;
 }
 .localisation form input {
+  margin-top: 5px;
   border: none;
   background-color: #e4e4e4;
   font-weight: bold;
   text-align: center;
-  width: 100%;
+  width: 70%;
 }
 
 .annuaire {

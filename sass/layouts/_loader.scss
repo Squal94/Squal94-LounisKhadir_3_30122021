@@ -6,7 +6,7 @@
         @include flexcenterRow ;
         animation: loading 4.5s ease-out;
         animation-fill-mode: forwards;
-        background-color:$background-loader;
+        background-color: bg-light($background-color-lightgrey);
         height: 100vh;
         position: fixed;
         top: 0;
