@@ -80,7 +80,22 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            @include tablette{
+                background-image: map-get($img-rest-tab, $num-img);
+            }
+            @include desktop{
+
+                background-image: map-get($img-rest-desk, $num-img);
+            }
 }
+
+@mixin select-img-opa ($num-img){
+    background-image: map-get($img-rest-tab-opa, $num-img);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+}
+
 
 /* mixin transform */
 
@@ -123,7 +138,11 @@
             text-shadow: 0 0 0 rgba(147, 86, 220, .9);
             animation: battement 2s infinite cubic-bezier(.68, 0, 0, 1); 
             z-index: 2; 
-            @include transition-transform2 ;
+            @include transition-transform2 ;   
+            @include tablette {
+                right: 10%;
+                bottom: 22.5px;
+            }
         }
         
         &--hidden{
@@ -140,6 +159,10 @@
             transform-origin: center;
             z-index: 2;  
             @include transition-transform ;
+            @include tablette {
+                right: 10%;
+                bottom: 22.5px;
+            }
         &:hover{
                 opacity: 1;
             }
