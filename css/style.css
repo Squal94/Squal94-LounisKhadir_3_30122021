@@ -1176,53 +1176,106 @@ h1 {
 @media screen and (min-width: 993px) {
   .logo {
     width: 25%;
+    margin-bottom: 100px;
   }
 
-  .localisation {
-    background-color: white;
-    box-shadow: none;
-    margin-left: -10px;
+  .menu-desk {
+    display: flex;
+    height: 300px;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: -20px;
   }
-  .localisation i {
+  .menu-desk .aside {
+    width: 20%;
+    height: 100%;
+    min-width: 400px;
+    display: inline-flex;
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-desk .aside .localisation {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 90%;
+    height: 100%;
+    background-color: #e4e4e4;
+    box-shadow: none;
+  }
+  .menu-desk .aside .localisation i {
     margin: 7px 10px 0 0;
     color: #9356DC;
   }
-  .localisation form input {
-    background-color: #9356DC;
+  .menu-desk .aside .localisation form {
+    width: 90%;
+  }
+  .menu-desk .aside .localisation form input {
     color: white;
     border: 3px solid #bbbbbb;
     border-radius: 25px;
   }
-
-  .annuaire {
-    background-color: #e6d1e0;
+  .menu-desk .aside .annuaire {
+    width: 90%;
+    background-color: #e4e4e4;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
-
-  .nav__title {
+  .menu-desk .nav {
+    border-radius: 25px;
+    width: 60%;
+    min-width: 800px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+  }
+  .menu-desk .nav__title {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
   }
-  .nav__flex {
+  .menu-desk .nav__flex {
     width: 95%;
-    background-color: white;
+    background-color: transparent;
     animation: animation2 0.3s ease-in-out 0.2s 1 backwards;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
   }
-  .nav__btn {
-    padding: 15px 20px;
+  .menu-desk .nav__btn {
+    margin: 20px;
+    padding: 25px 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
-  .nav--forme {
-    width: 33%;
+  .menu-desk .nav--forme {
+    width: 30%;
+  }
+  .menu-desk .nav__deco1 {
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px auto;
+    width: 90%;
+    height: 100px;
+    border: 2px solid #e4e4e4;
+    background-image: url(./../image/restaurants/small/restau-1_w640.jpg);
   }
 
   .restau {
-    background-color: white;
-    width: 100%;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 25px;
   }
   .restau__title {
     width: 100%;
@@ -1234,16 +1287,16 @@ h1 {
   }
   .restau__flex {
     width: 100%;
-    margin: auto;
+    margin: 30px auto 0px auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
   .carte {
-    width: 40%;
-    margin: 20px;
+    width: 35%;
+    margin: 10px auto;
   }
 
   .footer {

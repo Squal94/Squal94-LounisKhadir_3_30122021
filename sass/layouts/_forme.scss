@@ -126,70 +126,119 @@
 
         .logo{
             width: 25%;
+            margin-bottom: 100px;
         }
 
-        .localisation{
-            background-color: $lightcolor-item-fonts ;
-            box-shadow: none;
-            margin-left: -10px;
-            & i{
-                margin: 7px 10px 0 0;
-                color: $color-primary;
+        .menu-desk{
+            display: flex;
+            height: 300px;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content:center;
+            margin: auto;
+            margin-left: -20px;
+            .aside{
+                width: 20%;
+                height: 100%;
+                min-width: 400px;
+                display:inline-flex;
+                flex-flow: column-reverse nowrap;
+                align-items: center;
+                justify-content: center;
+                .localisation{
+                    border-bottom-left-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                    width: 90%;
+                    height: 100%;
+                    background-color: $background-color-lightgrey ;
+                    box-shadow: none;
+                    & i{
+                        margin: 7px 10px 0 0;
+                        color: $color-primary;
+                    }
+                    & form{
+                        width: 90%;
+                    }
+                    & form input{
+                        color: $lightcolor-item-fonts;
+                        border: 3px solid rgb(187, 187, 187);
+                        border-radius: 25px;
+                    }
+                }
+            
+                .annuaire{
+                    width: 90%;
+                    background-color: $background-color-lightgrey;
+                    border-top-left-radius: 25px;
+                    border-top-right-radius: 25px;
+                }
             }
-            & form input{
-                background-color: $color-primary;
-                color: $lightcolor-item-fonts;
-                border: 3px solid rgb(187, 187, 187);
+            .nav{
                 border-radius: 25px;
+                width: 60% ;
+                min-width:800px;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                background: linear-gradient($color-secondary,$color-primary);
+                &__title{
+                    @include flexcenterRow ;
+                }
+        
+                &__flex{
+                    width: 95%;
+                    background-color: transparent;
+                    animation: animation2 0.3s ease-in-out 0.2s 1 backwards;
+                    @include flexcenterRow ;
+                }
+                &__btn{
+                    margin: 20px;
+                    padding: 25px 10px ;
+                    @include flexcenterRow
+                }
+                &--forme{
+                    width: 30%;
+                }
+                &__deco1{
+                    object-fit: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin: 10px auto;
+                    width: 90%;
+                    height: 100px;
+                    border: 2px solid $background-color-lightgrey;
+                    background-image: url(./../image/restaurants/small/restau-1_w640.jpg);
+                }
+        
             }
         }
-    
-        .annuaire{
-            background-color: $background-color-tab;
-        }
-    
-        .nav{
-    
-            &__title{
-                @include flexcenterRow ;
-            }
-    
-            &__flex{
-                width: 95%;
-                background-color: $lightcolor-item-fonts;
-                animation: animation2 0.3s ease-in-out 0.2s 1 backwards;
-                @include flexcenterRow ;
-            }
-            &__btn{
-                padding: 15px 20px ;
-            }
-            &--forme{
-                width: 33%;
-            }
-    
-        }
+
+       
     
         .restau{
-            background-color: $lightcolor-item-fonts;
-            width: 100%;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 25px;
             &__title{
                width: 100%;
                margin: auto;
                @include flexcenterRow ;
             }
-        
             &__flex{
                 width: 100%;
-                margin: auto;
+                margin: 30px auto 0px auto;
                 display: flex;
                 flex-flow: row wrap ;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
             }
         }
         .carte{
-            width: 40%;
-            margin: 20px;
+            width: 35%;
+            margin: 10px auto;
         }     
         .footer{
             margin: auto;
