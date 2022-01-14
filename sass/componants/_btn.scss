@@ -33,4 +33,12 @@
     &:hover{
         @include x-10;
     }
+    @include tablette {
+        left: 50px;
+        top: 25px;
+    }
+    @include desktop {
+        left: 50px;
+        top: 15px;
+    }
 }

@@ -6,17 +6,17 @@
 }
 
 @mixin desktop {
-    @media screen and (min-width : $min-desk) and (max-width : $max-desk) {
+    @media screen and (min-width : $min-desk) {
         @content ;
     }
 }
 
-@mixin tv {
+/* @mixin tv {
     @media screen and (min-width : $min-tv) and (max-width : $max-tv) {
         @content ;
     }
 }
-
+*/
 /* Shadow */
 
 @mixin shadow{
@@ -143,6 +143,10 @@
                 right: 10%;
                 bottom: 22.5px;
             }
+            @include desktop {
+                right: 10%;
+                bottom: 12px;
+            }
         }
         
         &--hidden{
@@ -162,6 +166,10 @@
             @include tablette {
                 right: 10%;
                 bottom: 22.5px;
+            }
+            @include desktop {
+                right: 10%;
+                bottom: 12px;
             }
         &:hover{
                 opacity: 1;

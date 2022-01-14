@@ -1,6 +1,7 @@
-@include tablette {
 
-    /* tab menu acceuil */
+/* tab acceuil */
+
+@include tablette {
 
     .localisation{
         background-color: $lightcolor-item-fonts ;
@@ -111,4 +112,145 @@
         border-radius: 25px;
     }
 
+    .footer{
+        border-radius: 25px 25px 0 0 ;
+        margin-top: 50px;
+    }
+
+}
+
+    /* desktop acceuil */
+
+
+@include desktop {
+
+        .logo{
+            width: 25%;
+        }
+
+        .localisation{
+            background-color: $lightcolor-item-fonts ;
+            box-shadow: none;
+            margin-left: -10px;
+            & i{
+                margin: 7px 10px 0 0;
+                color: $color-primary;
+            }
+            & form input{
+                background-color: $color-primary;
+                color: $lightcolor-item-fonts;
+                border: 3px solid rgb(187, 187, 187);
+                border-radius: 25px;
+            }
+        }
+    
+        .annuaire{
+            background-color: $background-color-tab;
+        }
+    
+        .nav{
+    
+            &__title{
+                @include flexcenterRow ;
+            }
+    
+            &__flex{
+                width: 95%;
+                background-color: $lightcolor-item-fonts;
+                animation: animation2 0.3s ease-in-out 0.2s 1 backwards;
+                @include flexcenterRow ;
+            }
+            &__btn{
+                padding: 15px 20px ;
+            }
+            &--forme{
+                width: 33%;
+            }
+    
+        }
+    
+        .restau{
+            background-color: $lightcolor-item-fonts;
+            width: 100%;
+            &__title{
+               width: 100%;
+               margin: auto;
+               @include flexcenterRow ;
+            }
+        
+            &__flex{
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-flow: row wrap ;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .carte{
+            width: 40%;
+            margin: 20px;
+        }     
+        .footer{
+            margin: auto;
+            @include flexcenterRow;
+        }
+    
+        /* desktop menu */
+    
+       
+    
+        .head-menu {
+            width: 60%;
+            margin: 10px auto ;
+            border: 5px solid $color-tertiary;
+            border-radius: 35px;
+            &__img{
+                border-radius: 25px;
+                height: 300px;
+            }
+    
+            &__title{
+                background-color: $background-color-lightgrey;
+                margin: 0 auto;
+                text-align: center;
+                padding: 10px 0 10px 0;
+                left: 5%;
+                width: 90%; 
+                height: 50px;
+            }
+        }
+    
+        .conteneur-menu{
+        display: flex ;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 95%;
+        border: 5px solid $background-color-lightgrey;
+        border-radius: 25px;
+        margin: 50px auto 0px auto;
+            @for $num from 1 through 4 {
+            &--img#{$num} {
+                @include select-img-opa($num * 1) ;
+                }
+            }
+        }
+    
+        .menu{
+            width: 25%;
+            margin: 30px;
+            border-radius: 25px;
+        }
+
+        .conteneur-btn{
+            width: 75%;
+        }
+    
+        .footer{
+            width:90% ;
+            border-radius: 25px 25px 0 0 ;
+            margin-top: 50px;
+        }
+    
 }
