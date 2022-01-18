@@ -1050,6 +1050,10 @@ h1 {
     border: 3px solid #bbbbbb;
     border-radius: 25px;
   }
+  .localisation input::placeholder {
+    color: white;
+    opacity: 1;
+  }
 
   .annuaire {
     background-color: #e6d1e0;
@@ -1179,77 +1183,78 @@ h1 {
     margin-bottom: 100px;
   }
 
-  .menu-desk {
+  main {
     display: flex;
-    height: 300px;
     flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    width: 94%;
     margin: auto;
-    margin-left: -20px;
   }
-  .menu-desk .aside {
+
+  .aside {
     width: 20%;
-    height: 100%;
     min-width: 400px;
     display: inline-flex;
     flex-flow: column-reverse nowrap;
     align-items: center;
     justify-content: center;
+    background-image: url(./../image/restaurants/medium/test/restau-3_w1024-opa.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid #252525;
   }
-  .menu-desk .aside .localisation {
+  .aside .localisation {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     width: 90%;
-    height: 100%;
     background-color: #e4e4e4;
     box-shadow: none;
   }
-  .menu-desk .aside .localisation i {
+  .aside .localisation i {
     margin: 7px 10px 0 0;
     color: #9356DC;
   }
-  .menu-desk .aside .localisation form {
+  .aside .localisation form {
     width: 90%;
   }
-  .menu-desk .aside .localisation form input {
+  .aside .localisation form input {
     color: white;
     border: 3px solid #bbbbbb;
     border-radius: 25px;
   }
-  .menu-desk .aside .annuaire {
+  .aside .annuaire {
     width: 90%;
+    margin-top: 20px;
     background-color: #e4e4e4;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
-  .menu-desk .nav {
+  .aside .nav {
     border-radius: 25px;
-    width: 60%;
-    min-width: 800px;
-    height: 100%;
+    width: 90%;
+    min-width: 400px;
     margin: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background: linear-gradient(#FF79DA, #9356DC);
   }
-  .menu-desk .nav__title {
+  .aside .nav__title {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
   }
-  .menu-desk .nav__flex {
+  .aside .nav__flex {
     width: 95%;
     background-color: transparent;
     animation: animation2 0.3s ease-in-out 0.2s 1 backwards;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-flow: column nowrap;
   }
-  .menu-desk .nav__btn {
+  .aside .nav__btn {
     margin: 20px;
     padding: 25px 10px;
     display: flex;
@@ -1257,10 +1262,10 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .menu-desk .nav--forme {
+  .aside .nav--forme {
     width: 30%;
   }
-  .menu-desk .nav__deco1 {
+  .aside .nav__deco1 {
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1273,9 +1278,11 @@ h1 {
   }
 
   .restau {
-    margin: 20px auto;
-    width: 80%;
+    width: 70%;
     border-radius: 25px;
+    border: 2px solid #252525;
+    margin: 0 0 0 30px;
+    min-width: 800px;
   }
   .restau__title {
     width: 100%;
@@ -1295,8 +1302,9 @@ h1 {
   }
 
   .carte {
-    width: 35%;
-    margin: 10px auto;
+    width: 30%;
+    margin: 20px auto;
+    min-width: 300px;
   }
 
   .footer {
@@ -1374,9 +1382,12 @@ h1 {
   }
 
   .footer {
-    width: 90%;
+    width: 95%;
     border-radius: 25px 25px 0 0;
     margin-top: 50px;
+  }
+  .footer__title {
+    margin-right: 30px;
   }
 }
 
