@@ -1,12 +1,12 @@
 .annuaire{
     background-color: bg-light($background-color-lightgrey) ;
-    text-align: center;
     margin: auto;
     padding: 30px;
+    text-align: center;
     width: 100%;
 
     &__title{
-        width: 80%;
         margin: 0 auto ;
+        width: 80%;
     }
 }

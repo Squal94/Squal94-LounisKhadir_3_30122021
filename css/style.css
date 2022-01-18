@@ -290,13 +290,13 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
   font-family: "robotoregular", Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 
 a {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 h1 {
@@ -374,8 +374,8 @@ h1 {
 }
 
 .logo {
-  width: 50%;
   margin: 20px auto;
+  width: 50%;
   animation: logo 1s ease-in-out 1 backwards;
 }
 .logo--center {
@@ -383,59 +383,62 @@ h1 {
 }
 
 .localisation {
-  width: 100%;
   background-color: #e4e4e4;
+  width: 100%;
   box-shadow: inset 0 1px 1px 1px #cbcbcb;
 }
 .localisation form {
+  align-items: flex-start;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: flex-start;
+  margin: auto;
   padding: 10px;
   width: 50%;
-  margin: auto;
 }
 .localisation form div {
   padding-bottom: 5px;
 }
 .localisation form input {
-  margin-top: 5px;
   border: none;
   background-color: #e4e4e4;
   font-weight: bold;
+  margin-top: 5px;
   text-align: center;
   width: 70%;
 }
 
 .annuaire {
   background-color: #f1f1f1;
-  text-align: center;
   margin: auto;
   padding: 30px;
+  text-align: center;
   width: 100%;
 }
 .annuaire__title {
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
 }
 
 .nav {
-  width: 90%;
   margin: auto;
+  width: 90%;
 }
 .nav__title {
   margin-left: 10px;
 }
 .nav__flex {
+  margin: auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 95%;
-  margin: auto;
 }
 .nav__btn {
+  margin: 10px;
+  position: relative;
+  padding: 25px 20px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -445,19 +448,16 @@ h1 {
   box-shadow: rgba(129, 129, 136, 0.2) 0px 7px 7px 0px;
   /*(dark-color-light($background-color-lightgrey))*/
   transition: all 0.4s ease-in-out;
-  position: relative;
-  padding: 25px 20px;
-  margin: 10px;
 }
 .nav__btn span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 5px 8px;
   background-color: #9356DC;
   border-radius: 50%;
   color: white;
   font-size: 0.7em;
+  padding: 5px 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
   transform: translate(-50%, 100%);
 }
 .nav__btn--forme {
@@ -467,13 +467,13 @@ h1 {
   font-weight: bolder;
 }
 .nav__btn--forme--i {
-  padding: 0 15px 0 15px;
   color: grey;
+  padding: 0 15px 0 15px;
 }
 .nav__btn--forme:hover {
+  background-color: #f2eafb;
   transform: scale(1.02);
   box-shadow: 0px 0px 15px 3px rgba(147, 86, 220, 0.3);
-  background-color: #f2eafb;
 }
 .nav__btn--forme:hover i {
   color: #9356DC;
@@ -481,16 +481,16 @@ h1 {
 
 .restau {
   background-color: #f1f1f1;
-  width: 100%;
-  padding: 30px 0 50px 0;
   margin: 50px 0 0 0;
+  padding: 30px 0 50px 0;
+  width: 100%;
 }
 .restau__title {
   margin-left: 20px;
 }
 .restau__flex {
-  width: 100%;
   margin: auto;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -499,12 +499,12 @@ h1 {
 }
 
 .carte {
-  width: 95%;
+  background-color: white;
+  border-radius: 20px;
   height: 250px;
   margin: 10px auto;
-  border-radius: 20px;
   position: relative;
-  background-color: white;
+  width: 95%;
   transition: all 0.4s ease-in-out;
   /*box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;*/
   box-shadow: rgba(129, 129, 136, 0.2) 0px 7px 7px 0px;
@@ -514,10 +514,10 @@ h1 {
   box-shadow: 0px 0px 15px 3px rgba(147, 86, 220, 0.3);
 }
 .carte__img {
-  width: 100%;
-  height: 175px;
   border-radius: 20px 20px 0 0;
+  height: 175px;
   transition: opacity 0.3s ease-in-out;
+  width: 100%;
 }
 .carte__img--1 {
   background-image: url(../image/restaurants/small/restau-1_w640.jpg);
@@ -584,24 +584,24 @@ h1 {
   }
 }
 .carte--annotation {
-  width: 80px;
-  height: 30px;
-  border-radius: 2px;
+  align-items: center;
   background-color: #99E2D0;
+  border-radius: 2px;
   color: #278870;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: absolute;
   right: 15px;
   top: 15px;
+  height: 30px;
+  width: 80px;
   /*transform: translate(200%, -500%);*/
 }
 .carte__txt {
-  width: 100%;
   height: 75px;
   padding-top: 10px;
   position: relative;
+  width: 100%;
 }
 .carte__txt__conteneur {
   cursor: pointer;
@@ -672,12 +672,12 @@ h1 {
 }
 
 .head-menu {
-  width: 100%;
   position: relative;
+  width: 100%;
 }
 .head-menu__img {
-  width: 100%;
   height: 300px;
+  width: 100%;
   position: relative;
 }
 .head-menu__img__conteneur {
@@ -831,10 +831,10 @@ h1 {
   margin: 20px 0 0 15px;
 }
 .menu__title--under {
+  background-color: #99E2D0;
   margin-left: 15px;
   height: 4px;
   width: 40px;
-  background-color: #99E2D0;
   animation: under 1s ease-in-out 0.2s 1 backwards;
 }
 .menu__btn {
@@ -843,13 +843,13 @@ h1 {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 6px 21px 1px rgba(165, 165, 165, 0.75);
-  width: 95%;
-  height: 80px;
-  margin: 15px auto;
+  animation: animation2 0.4s ease-in-out backwards;
   background-color: white;
   border-radius: 20px;
+  margin: 15px auto;
   overflow: hidden;
-  animation: animation2 0.4s ease-in-out backwards;
+  height: 80px;
+  width: 95%;
 }
 .menu__btn:nth-child(1) {
   animation-delay: 0.1s;
@@ -892,17 +892,17 @@ h1 {
 }
 .menu__btn__content--h3 {
   margin: 20px 0 5px 10px;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__btn__content--txt {
-  width: 100%;
-  padding-right: 10px;
   margin: 0 0 15px 10px;
-  white-space: nowrap;
   overflow: hidden;
+  padding-right: 10px;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 .menu__btn__prix {
   height: 100%;
@@ -912,15 +912,15 @@ h1 {
   align-items: center;
 }
 .menu__btn__prix__euro {
-  margin: 35px 20px 5px 10px;
   font-weight: bold;
+  margin: 35px 20px 5px 10px;
 }
 .menu__btn__prix__check {
+  border-radius: 0 20px 20px 0;
+  background: #99E2D0;
   margin-right: -70px;
   height: 80px;
   width: 70px;
-  border-radius: 0 20px 20px 0;
-  background: #99E2D0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -928,8 +928,8 @@ h1 {
   transition: all 0.4s ease-in-out;
 }
 .menu__btn__prix__check--rotation {
-  font-size: 1.5em;
   color: white;
+  font-size: 1.5em;
   transition: all 0.4s ease-in-out;
 }
 
@@ -941,21 +941,21 @@ h1 {
   width: 100%;
 }
 .conteneur-btn .btn--violet {
-  width: 40%;
   margin: 50px 50px 70px 50px;
+  width: 40%;
 }
 
 .footer {
-  width: 100%;
   background-color: #252525;
   color: white;
   padding: 20px;
+  width: 100%;
 }
 .footer__title {
-  padding: 10px 10px 10px 20px;
-  margin: 0;
   font-weight: 100;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 10px 10px 10px 20px;
 }
 .footer__with-i {
   display: flex;
@@ -963,9 +963,9 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   width: 95%;
+  font-size: 0.9em;
   margin: 0px 0px 0px 20px;
   padding: 0;
-  font-size: 0.9em;
 }
 .footer__with-i i {
   height: 15px;
@@ -978,14 +978,14 @@ h1 {
   color: #9356DC;
 }
 .footer__txt {
-  margin: 5px 5px 5px 20px;
   font-size: 0.9em;
+  margin: 5px 5px 5px 20px;
 }
 
 .btn {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: auto;
   font-size: 1em;
   /*box-shadow: $size-shadow $size-shadow $shadow-flou $shadow-flou $color;*/
@@ -999,8 +999,8 @@ h1 {
   color: #FFFFFF;
   font-weight: 600;
   height: 50px;
-  width: 220px;
   padding: 10px;
+  width: 220px;
 }
 .btn:hover {
   transform: scale(1.02);
@@ -1011,7 +1011,7 @@ h1 {
 .fleche {
   font-size: 1.2em;
   left: 20px;
-  top: 10px;
+  top: 7px;
   padding: 20px;
   position: absolute;
   z-index: 2;
@@ -1038,15 +1038,13 @@ h1 {
   .localisation {
     background-color: white;
     box-shadow: none;
-    margin-left: -10px;
   }
   .localisation i {
-    margin: 7px 10px 0 0;
     color: #9356DC;
+    margin: 7px 10px 0 0;
   }
   .localisation form input {
     background-color: #9356DC;
-    color: white;
     border: 3px solid #bbbbbb;
     border-radius: 25px;
   }
@@ -1066,9 +1064,7 @@ h1 {
     align-items: center;
   }
   .nav__flex {
-    width: 95%;
-    background-color: white;
-    animation: animation2 0.3s ease-in-out 0.2s 1 backwards;
+    animation: animation2 0.3s ease-in-out 4.6s 1 backwards;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -1083,32 +1079,26 @@ h1 {
 
   .restau {
     background-color: white;
-    width: 100%;
+    margin: 10px auto 10px auto;
   }
   .restau__title {
-    width: 100%;
-    margin: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
   }
   .restau__flex {
-    width: 100%;
-    margin: auto;
-    display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
   }
 
   .carte {
-    width: 40%;
     margin: 20px;
+    width: 40%;
   }
 
   .footer {
-    margin: auto;
+    margin: 10px auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -1117,8 +1107,8 @@ h1 {
 
   /* tab menu */
   .head-menu {
-    width: 80%;
     margin: 10px auto;
+    width: 80%;
   }
   .head-menu__img {
     border-radius: 25px;
@@ -1126,19 +1116,16 @@ h1 {
   }
   .head-menu__title {
     background-color: #e6d1e0;
-    margin: 0 auto;
     left: 5%;
+    margin: 0 auto;
     width: 90%;
   }
 
   .conteneur-menu {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 95%;
     border-radius: 25px;
+    flex-flow: row wrap;
     margin: 50px auto 0px auto;
+    width: 95%;
   }
   .conteneur-menu--img1 {
     background-image: url(../image/restaurants/medium/test/restau-1_w1024-opa.jpg);
@@ -1166,9 +1153,8 @@ h1 {
   }
 
   .menu {
-    width: 40%;
     margin: 30px;
-    border-radius: 25px;
+    width: 40%;
   }
 
   .footer {
@@ -1179,67 +1165,62 @@ h1 {
 /* desktop acceuil */
 @media screen and (min-width: 993px) {
   .logo {
+    margin-bottom: 50px;
+    min-width: 350px;
     width: 25%;
-    margin-bottom: 100px;
   }
 
-  main {
+  .main {
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
-    width: 94%;
     margin: auto;
+    width: 94%;
   }
 
   .aside {
-    width: 20%;
-    min-width: 400px;
-    display: inline-flex;
     flex-flow: column-reverse nowrap;
     align-items: center;
-    justify-content: center;
     background-image: url(./../image/restaurants/medium/test/restau-3_w1024-opa.jpg);
-    background-size: cover;
     background-position: center;
-    padding-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 20px;
     border: 2px solid #252525;
+    display: inline-flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 20%;
+    min-width: 400px;
   }
   .aside .localisation {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    width: 90%;
-    background-color: #e4e4e4;
     box-shadow: none;
+    width: 90%;
   }
   .aside .localisation i {
-    margin: 7px 10px 0 0;
     color: #9356DC;
+    margin: 7px 10px 0 0;
   }
   .aside .localisation form {
     width: 90%;
   }
   .aside .localisation form input {
-    color: white;
     border: 3px solid #bbbbbb;
     border-radius: 25px;
   }
   .aside .annuaire {
-    width: 90%;
-    margin-top: 20px;
     background-color: #e4e4e4;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    margin-top: 20px;
+    width: 90%;
   }
   .aside .nav {
-    border-radius: 25px;
-    width: 90%;
     min-width: 400px;
-    margin: 0;
-    display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
   }
   .aside .nav__title {
     display: flex;
@@ -1248,15 +1229,10 @@ h1 {
     align-items: center;
   }
   .aside .nav__flex {
-    width: 95%;
-    background-color: transparent;
-    animation: animation2 0.3s ease-in-out 0.2s 1 backwards;
-    display: flex;
-    flex-flow: column nowrap;
+    animation: animation2 0.3s ease-in-out 4.6s 1 backwards;
   }
   .aside .nav__btn {
     margin: 20px;
-    padding: 25px 10px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -1265,27 +1241,16 @@ h1 {
   .aside .nav--forme {
     width: 30%;
   }
-  .aside .nav__deco1 {
-    object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 10px auto;
-    width: 90%;
-    height: 100px;
-    border: 2px solid #e4e4e4;
-    background-image: url(./../image/restaurants/small/restau-1_w640.jpg);
-  }
 
   .restau {
-    width: 70%;
     border-radius: 25px;
     border: 2px solid #252525;
+    height: 735px;
     margin: 0 0 0 30px;
     min-width: 800px;
+    padding: 20px 0 20px 0;
   }
   .restau__title {
-    width: 100%;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -1293,18 +1258,15 @@ h1 {
     align-items: center;
   }
   .restau__flex {
-    width: 100%;
-    margin: 30px auto 0px auto;
-    display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    margin: 55px auto 0px auto;
   }
 
   .carte {
-    width: 30%;
-    margin: 20px auto;
+    margin: 20px 10px;
     min-width: 300px;
+    width: 30%;
   }
 
   .footer {
@@ -1317,34 +1279,29 @@ h1 {
 
   /* desktop menu */
   .head-menu {
-    width: 60%;
-    margin: 10px auto;
     border: 5px solid #99E2D0;
     border-radius: 35px;
+    margin: 10px auto;
+    width: 60%;
   }
   .head-menu__img {
     border-radius: 25px;
     height: 300px;
   }
   .head-menu__title {
-    background-color: #e4e4e4;
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px 0 10px 0;
-    left: 5%;
-    width: 90%;
     height: 50px;
+    left: 5%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    width: 90%;
   }
 
   .conteneur-menu {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 95%;
     border: 5px solid #e4e4e4;
     border-radius: 25px;
+    flex-flow: row wrap;
     margin: 50px auto 0px auto;
+    width: 95%;
   }
   .conteneur-menu--img1 {
     background-image: url(../image/restaurants/medium/test/restau-1_w1024-opa.jpg);
@@ -1372,9 +1329,8 @@ h1 {
   }
 
   .menu {
-    width: 25%;
     margin: 30px;
-    border-radius: 25px;
+    width: 25%;
   }
 
   .conteneur-btn {
@@ -1382,12 +1338,12 @@ h1 {
   }
 
   .footer {
-    width: 95%;
     border-radius: 25px 25px 0 0;
     margin-top: 50px;
+    width: 95%;
   }
   .footer__title {
-    margin-right: 30px;
+    margin-right: 150px;
   }
 }
 

@@ -1,11 +1,11 @@
 
 
 .head-menu {
-    width: 100%;
     position: relative;
+    width: 100%;
     &__img{
-        width: 100%;
         height: 300px;
+        width: 100%;
         position: relative;
        @include coeur ;
     }
@@ -40,23 +40,23 @@
             margin: $margin-menu-h2;
         }
         &--under{
+            background-color: $color-tertiary;
             margin-left: 15px;
             height: 4px;
             width: 40px;
-            background-color: $color-tertiary;
             animation: under 1s ease-in-out 0.2s 1 backwards;
         }
     }
     &__btn{
         @include flexCenterBetween;
         @include shadow-btn-menu;
-        width: 95%;
-        height: 80px;
-        margin: 15px auto;
+        animation: animation2 0.4s ease-in-out backwards;
         background-color: $background-menu-btn;
         border-radius: 20px;
+        margin: 15px auto;
         overflow: hidden;
-        animation: animation2 0.4s ease-in-out backwards;
+        height: 80px;
+        width: 95%;
         @for $t-boucle from 1 through 10 {
             &:nth-child(#{$t-boucle}) {
             animation-delay : $t-boucle * 0.1s ;
@@ -73,38 +73,37 @@
                 overflow: hidden;
             &--h3{
                 margin: $margin-menu-h3;
-                white-space:nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                
+                white-space:nowrap;   
             }
             &--txt{
-                width: 100%;
-                padding-right: 10px;
                 margin: $margin-menu-txt;
-                white-space:nowrap;
                 overflow: hidden;
+                padding-right: 10px;
                 text-overflow: ellipsis;
+                white-space:nowrap;
+                width: 100%;
             }
         }
         &__prix{
             height: 100%;
             @include flexcenterRow;
             &__euro{
-                margin: 35px 20px 5px 10px;
                 font-weight: bold;
+                margin: 35px 20px 5px 10px;
             }
             &__check{
+                border-radius: 0 20px 20px 0;
+                background: $color-tertiary; 
                 margin-right:-70px;
                 height: 80px;
                 width: 70px;
-                border-radius: 0 20px 20px 0;
-                background: $color-tertiary; 
                 @include flexcenterRow ;
                 @include transition-transform;
                 &--rotation{
-                    font-size: $fontsize-check ;
                     color: $color-check;
+                    font-size: $fontsize-check ;
                     @include transition-transform
                 
                 }
@@ -117,7 +116,7 @@
     @include flexcenterRow ;
     width: 100%;
     .btn--violet{
-        width: 40%;
         margin: 50px 50px 70px 50px;
+        width: 40%;
     }
 }

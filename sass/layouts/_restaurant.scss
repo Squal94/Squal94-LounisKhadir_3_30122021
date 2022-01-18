@@ -2,40 +2,37 @@
 
 .restau{
     background-color: bg-light($background-color-lightgrey);
-    width: 100%;
-    padding: 30px 0 50px 0;
     margin: 50px 0 0 0;
-
+    padding: 30px 0 50px 0;
+    width: 100%;
     &__title{
         margin-left: 20px;
     }
-
     &__flex{
-        width: 100%;
         margin: auto;
+        width: 100%;
         @include flexMidCol ;
     }
 }
 
 
 .carte{
-    width: 95%;
+    background-color: $lightcolor-item-fonts;
+    border-radius: 20px;
     height: 250px;
     margin: 10px auto;
-    border-radius: 20px;
     position: relative;
-    background-color: $lightcolor-item-fonts;
+    width: 95%;
     @include transition-transform ;
     &:hover{
         @include block-scale ;
     }
     @include shadow ;
     &__img{
-        width: 100%;
-        height: 175px;
         border-radius: 20px 20px 0 0;
+        height: 175px;
         transition: opacity 0.3s ease-in-out;
-        
+        width: 100%;
         @for $num from 1 through 4 {
             &--#{$num} {
                 @include select-img($num * 1) ;
@@ -43,24 +40,24 @@
         }
     }
     &--annotation{
-        width: 80px;
-        height: 30px;
-        border-radius: 2px;
+        align-items: center;
         background-color: $color-tertiary;
+        border-radius: 2px;
         color: dark-color($color-tertiary);
         display: flex;
         justify-content: center;
-        align-items: center;
         position: absolute;
         right: 15px;
         top: 15px;
+        height: 30px;
+        width: 80px;
         /*transform: translate(200%, -500%);*/
     }
     &__txt{
-        width: 100%;
         height: 75px;
         padding-top: 10px;
         position: relative;
+        width: 100%;
         @include coeur;
         &--title{
             margin: 0 10px;

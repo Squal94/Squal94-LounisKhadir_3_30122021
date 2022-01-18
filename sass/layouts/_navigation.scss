@@ -1,30 +1,29 @@
 .nav{
-    width: 90%;
     margin: auto;
+    width: 90%;
     &__title{
         margin-left: 10px;
     }
     &__flex{
-        @include flexMidCol ;
         margin: auto;
-       
+        @include flexMidCol ;  
     }
     &__btn{
+        margin: 10px;
+        position: relative;
+        padding: 25px 20px ;
         @include flexstartRow ;
         @include shadow ;/*(dark-color-light($background-color-lightgrey))*/
         @include transition-transform ;
-        position: relative;
-        padding: 25px 20px ;
-        margin: 10px;
         span{
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 5px 8px;
             background-color: $color-primary;
             border-radius: 50%;
             color: $lightcolor-item-fonts ;
             font-size: 0.7em;
+            padding: 5px 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
             transform: translate(-50%, 100%);
         }
         &--forme{
@@ -33,12 +32,12 @@
             font-size: 1em;
             font-weight: bolder;
             &--i {
-                padding: 0 15px 0 15px;
                 color: grey;
+                padding: 0 15px 0 15px;
             }
         &:hover{
-            @include block-scale ;
             background-color: hover($color-primary);
+            @include block-scale ;
             & i{
                 color: $color-primary;
             }
