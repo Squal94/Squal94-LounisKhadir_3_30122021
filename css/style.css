@@ -520,67 +520,67 @@ h1 {
   width: 100%;
 }
 .carte__img--1 {
-  background-image: url("../image/restaurants/small/restau-1_w640.jpg");
+  background-image: url(../image/restaurants/Small/restau-1_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .carte__img--1 {
-    background-image: url("../image/restaurants/medium/restau-1_w1024.jpg");
+    background-image: url(../image/restaurants/Medium/restau-1_w1024.jpg);
   }
 }
 @media screen and (min-width: 993px) {
   .carte__img--1 {
-    background-image: url("../image/restaurants/large/restau-1_w1920.jpg");
+    background-image: url(../image/restaurants/Large/restau-1_w1920.jpg);
   }
 }
 .carte__img--2 {
-  background-image: url("../image/restaurants/small/restau-2_w640.jpg");
+  background-image: url(../image/restaurants/Small/restau-2_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .carte__img--2 {
-    background-image: url("../image/restaurants/medium/restau-2_w1024.jpg");
+    background-image: url(../image/restaurants/Medium/restau-2_w1024.jpg);
   }
 }
 @media screen and (min-width: 993px) {
   .carte__img--2 {
-    background-image: url("../image/restaurants/large/restau-2_w1920.jpg");
+    background-image: url(../image/restaurants/Large/restau-2_w1920.jpg);
   }
 }
 .carte__img--3 {
-  background-image: url("../image/restaurants/small/restau-3_w640.jpg");
+  background-image: url(../image/restaurants/Small/restau-3_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .carte__img--3 {
-    background-image: url("../image/restaurants/medium/restau-3_w1024.jpg");
+    background-image: url(../image/restaurants/Medium/restau-3_w1024.jpg);
   }
 }
 @media screen and (min-width: 993px) {
   .carte__img--3 {
-    background-image: url("../image/restaurants/large/restau-3_w1920.jpg");
+    background-image: url(../image/restaurants/Large/restau-3_w1920.jpg);
   }
 }
 .carte__img--4 {
-  background-image: url("../image/restaurants/small/restau-4_w640.jpg");
+  background-image: url(../image/restaurants/Small/restau-4_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .carte__img--4 {
-    background-image: url("../image/restaurants/medium/restau-4_w1024.jpg");
+    background-image: url(../image/restaurants/Medium/restau-4_w1024.jpg);
   }
 }
 @media screen and (min-width: 993px) {
   .carte__img--4 {
-    background-image: url("../image/restaurants/large/restau-4_w1920.jpg");
+    background-image: url(../image/restaurants/Large/restau-4_w1920.jpg);
   }
 }
 .carte--annotation {
@@ -739,67 +739,67 @@ h1 {
   opacity: 1;
 }
 .head-menu--img1 {
-  background-image: url("../image/restaurants/small/restau-1_w640.jpg");
+  background-image: url(../image/restaurants/Small/restau-1_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .head-menu--img1 {
-    background-image: url("../image/restaurants/medium/restau-1_w1024.jpg");
+    background-image: url(../image/restaurants/Medium/restau-1_w1024.jpg);
   }
 }
 @media screen and (min-width: 993px) {
   .head-menu--img1 {
-    background-image: url("../image/restaurants/large/restau-1_w1920.jpg");
+    background-image: url(../image/restaurants/Large/restau-1_w1920.jpg);
   }
 }
 .head-menu--img2 {
-  background-image: url("../image/restaurants/small/restau-2_w640.jpg");
+  background-image: url(../image/restaurants/Small/restau-2_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .head-menu--img2 {
-    background-image: url("../image/restaurants/medium/restau-2_w1024.jpg");
+    background-image: url(../image/restaurants/Medium/restau-2_w1024.jpg);
   }
 }
 @media screen and (min-width: 993px) {
   .head-menu--img2 {
-    background-image: url("../image/restaurants/large/restau-2_w1920.jpg");
+    background-image: url(../image/restaurants/Large/restau-2_w1920.jpg);
   }
 }
 .head-menu--img3 {
-  background-image: url("../image/restaurants/small/restau-3_w640.jpg");
+  background-image: url(../image/restaurants/Small/restau-3_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .head-menu--img3 {
-    background-image: url("../image/restaurants/medium/restau-3_w1024.jpg");
+    background-image: url(../image/restaurants/Medium/restau-3_w1024.jpg);
   }
 }
 @media screen and (min-width: 993px) {
   .head-menu--img3 {
-    background-image: url("../image/restaurants/large/restau-3_w1920.jpg");
+    background-image: url(../image/restaurants/Large/restau-3_w1920.jpg);
   }
 }
 .head-menu--img4 {
-  background-image: url("../image/restaurants/small/restau-4_w640.jpg");
+  background-image: url(../image/restaurants/Small/restau-4_w640.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .head-menu--img4 {
-    background-image: url("../image/restaurants/medium/restau-4_w1024.jpg");
+    background-image: url(../image/restaurants/Medium/restau-4_w1024.jpg);
   }
 }
 @media screen and (min-width: 993px) {
   .head-menu--img4 {
-    background-image: url("../image/restaurants/large/restau-4_w1920.jpg");
+    background-image: url(../image/restaurants/Large/restau-4_w1920.jpg);
   }
 }
 .head-menu__title {
@@ -1128,25 +1128,25 @@ h1 {
     width: 95%;
   }
   .conteneur-menu--img1 {
-    background-image: url("../image/restaurants/medium/test/restau-1_w1024-opa.jpg");
+    background-image: url(../image/restaurants/Medium/test/restau-1_w1024-opa.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .conteneur-menu--img2 {
-    background-image: url("../image/restaurants/medium/test/restau-2_w1024-opa.jpg");
+    background-image: url(../image/restaurants/Medium/test/restau-2_w1024-opa.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .conteneur-menu--img3 {
-    background-image: url("../image/restaurants/medium/test/restau-3_w1024-opa.jpg");
+    background-image: url(../image/restaurants/Medium/test/restau-3_w1024-opa.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .conteneur-menu--img4 {
-    background-image: url("../image/restaurants/medium/test/restau-4_w1024-opa.jpg");
+    background-image: url(../image/restaurants/Medium/test/restau-4_w1024-opa.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1304,25 +1304,25 @@ h1 {
     width: 95%;
   }
   .conteneur-menu--img1 {
-    background-image: url("../image/restaurants/medium/test/restau-1_w1024-opa.jpg");
+    background-image: url(../image/restaurants/Medium/test/restau-1_w1024-opa.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .conteneur-menu--img2 {
-    background-image: url("../image/restaurants/medium/test/restau-2_w1024-opa.jpg");
+    background-image: url(../image/restaurants/Medium/test/restau-2_w1024-opa.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .conteneur-menu--img3 {
-    background-image: url("../image/restaurants/medium/test/restau-3_w1024-opa.jpg");
+    background-image: url(../image/restaurants/Medium/test/restau-3_w1024-opa.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .conteneur-menu--img4 {
-    background-image: url("../image/restaurants/medium/test/restau-4_w1024-opa.jpg");
+    background-image: url(../image/restaurants/Medium/test/restau-4_w1024-opa.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
