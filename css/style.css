@@ -11,6 +11,13 @@
     3: a la francaise
     4: le delice du sens 
 */
+/* $img-rest-tv: (
+    1: url(../image/restaurants/Large/restau-1_w1920.jpg),
+    2: url(../image/restaurants/Large/restau-2_w1920.jpg),
+    3: url(../image/restaurants/Large/restau-3_w1920.jpg),
+    4: url(../image/restaurants/Large/restau-4_w1920.jpg),
+);
+*/
 /*
 @function time-animation($t-boucle){
     @for $t from 1 through 9 {
@@ -978,6 +985,7 @@ h1 {
   color: #9356DC;
 }
 .footer__txt {
+  color: white;
   font-size: 0.9em;
   margin: 5px 5px 5px 20px;
 }
