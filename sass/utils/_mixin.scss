@@ -146,6 +146,7 @@
             @include desktop {
                 right: 10%;
                 bottom: 12px;
+                padding-left: 3px;
             }
         }
         
@@ -170,6 +171,7 @@
             @include desktop {
                 right: 10%;
                 bottom: 12px;
+                padding-left: 3px;
             }
         &:hover{
                 opacity: 1;
