@@ -874,6 +874,9 @@ h1 {
 .menu__btn:nth-child(4) {
   animation-delay: 0.4s;
 }
+.menu__btn:nth-child(5) {
+  animation-delay: 0.5s;
+}
 .menu__btn:hover .menu__btn__prix__check {
   margin-right: 0;
 }

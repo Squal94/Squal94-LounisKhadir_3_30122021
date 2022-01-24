@@ -57,7 +57,7 @@
         overflow: hidden;
         height: 80px;
         width: 95%;
-        @for $t-boucle from 1 through 4 {
+        @for $t-boucle from 1 through 5 {
             &:nth-child(#{$t-boucle}) {
             animation-delay : $t-boucle * 0.1s ;
             }
